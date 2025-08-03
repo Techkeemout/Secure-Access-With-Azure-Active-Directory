@@ -11,7 +11,7 @@ This guide walks through securing access using Microsoft Entra ID (formerly Azur
 ## Table of Contents 
 
 - [Scenario Overview](#scenario-overview)
-- [Task 1: Add New Users](#task-1-add-new-users)
+- [Task 1: Add New Users](#task-1-add-new-users) 
 - [Task 2: Create a DevSupport Group](#task-2-create-a-devsupport-group)
 - [Task 3: Enable Self-Service Password Reset (SSPR)](#task-3-enable-self-service-password-reset-sspr)
 - [Task 4: Test SSPR Functionality](#task-4-test-sspr-functionality)

@@ -82,7 +82,7 @@ After enabling SSPR for a group (e.g., DevSupport), it’s important to test the
 
 5. Follow the verification steps to reset your password.
 
-## Task 5: Task 5: Enable and configure multifactor authentication for a user ##
+## Task 5: Enable and configure multifactor authentication for a user ##
 Multi-Factor Authentication adds an additional layer of security by requiring users to verify their identity using a second method beyond just a password.
 1. Navigate to **Microsoft Entra ID**
 2. Click on **Security** under the **Manage** blade

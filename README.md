@@ -26,8 +26,6 @@ This documentation outlines steps to manage Azure Active Directory (Azure AD, no
 <img width="2030" height="1274" alt="Create John User" src="https://github.com/user-attachments/assets/6c51ddbc-c678-41d0-8e57-682b30c096a3" />
 
 8.	Verify the information and then select Create to create a new user.  
-<img width="1694" height="547" alt="Create new user" src="https://github.com/user-attachments/assets/3358d2e1-33a4-4151-83d5-8cf5e8963e5f" />
-
 9.	The user is created and added to your Azure AD organization.
 10.	Repeat the steps for the other two users, Dave and Jeff.
 <img width="1628" height="632" alt="Create all users" src="https://github.com/user-attachments/assets/397087d2-fc39-4379-8d08-0a51d5b508d7" />

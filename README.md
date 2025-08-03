@@ -33,11 +33,11 @@ This documentation outlines steps to manage Azure Active Directory (Azure AD, no
 
 ## Task 2: Create a group called DevSupport and add memeber ##
 Creating a security group in Azure AD lets you assign access or permissions collectively. In this task, we create a group named DevSupport and add users who provide developer support.
-1. Navigate back to ****Microsoft Entra ID****, under the **Manage** blade, select **Groups**.
+1. Navigate back to **Microsoft Entra ID**, under the **Manage** blade, select **Groups**.
 2. Select **New group**.
 3. Select the desired **Microsoft 365** from the drop-down menu. This will enable the shared email address for the group.
 4. Provide the Group information.
-5. To add members, click on the link under **Members** selected. Choose the desired names from the list and click ****Select****.
+5. To add members, click on the link under **Members** selected. Choose the desired names from the list and click **Select**.
 <img width="997" height="570" alt="image" src="https://github.com/user-attachments/assets/d810f8ee-85aa-4c5e-a44d-4daec5db8cf3" />
 6.	Verify the information and select Create to create the group. 
 7.	Your Group is successfully created. Click on the name of the group to see total of members.
@@ -46,18 +46,40 @@ Creating a security group in Azure AD lets you assign access or permissions coll
 ## Task 3: Enable self-service password reset ##
 Self-service password reset (SSPR) allows users to reset their Azure AD passwords securely without helpdesk involvement. Best practice is to enable SSPR gradually (e.g. a pilot group) before turning it on for all users
 In this task we enable SSPR for the DevSupport group created above.
+1. Navigate to Microsoft Entra ID, select **Password reset**.
+<img width="1682" height="903" alt="image" src="https://github.com/user-attachments/assets/70b698a7-c388-4f07-8665-5ad8f8f870f1" />
+2. From the Properties page, under the option Self service password reset enabled, choose **Selected**.
+<img width="1106" height="695" alt="image" src="https://github.com/user-attachments/assets/6043311a-979e-4622-bffc-296904234b8b" />
 
-
+3.	Choose Selected Group from the options shown to restrict password resets to a limited group of users.
+4.	Click the select group link under Select Group to populate your list of available groups.
+5.	Choose DevSupport and click Select.
+6.	Click Save to enable self-service password reset (SSPR).
 
 
 ## Task 4: Test self-service password reset  ##
 After enabling SSPR for a group (e.g., DevSupport), it’s important to test the functionality from an end-user perspective. This ensures users can reset their own passwords and that the feature is properly scoped and working.
-
+1. To test the manual registration process from an end-user's perspective, open a new browser window in InPrivate or incognito mode, and browse to [https://aka.ms/ssprsetup](url)
+2. Enter the credentials for the user.
+3. Follow the verification steps to reset your password. 
+4.
+5.
 
 ## Task 5: Task 5: Enable and configure multifactor authentication for a user ##
 Multi-Factor Authentication adds an additional layer of security by requiring users to verify their identity using a second method beyond just a password.
+1. Navigate to **Microsoft Entra ID**
+2. Click on Security under the Manage blade
+<img width="1326" height="878" alt="image" src="https://github.com/user-attachments/assets/80fd92cb-1ff5-41b4-8198-d2c515ee3990" />
 
+3. Click on **Multifactor authentication**.
+<img width="1148" height="771" alt="image" src="https://github.com/user-attachments/assets/364ee696-38c9-4381-a5ca-02207a70126a" />
 
+4. Select Additional cloud-based multifactor authentication settings.
+<img width="1150" height="630" alt="image" src="https://github.com/user-attachments/assets/4068fb23-e559-4653-a5e0-d548c54dd2c0" />
+5. Under Serviec settings, scroll down to Verication options
+6. Check the box Allow users to remember mutilfation authentication on devices they trust (between one to 365 days) and click **Save.**
+<img width="1624" height="919" alt="image" src="https://github.com/user-attachments/assets/d18dd20b-b63c-4b69-927e-50ee61acbcb9" />
+7. If you enable remember multi-factor authentication on trusted device, users can mark a device as trusted when they sign in by selecting Don't ask again.
 
 ## Notes & Tips: ##
 

@@ -8,7 +8,7 @@ This guide walks through securing access using Microsoft Entra ID (formerly Azur
 
 ---
 
-## 📋 Table of Contents 
+## Table of Contents 
 
 - [Scenario Overview](#scenario-overview)
 - [Task 1: Add New Users](#task-1-add-new-users)

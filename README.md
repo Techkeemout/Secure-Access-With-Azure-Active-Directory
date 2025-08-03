@@ -20,7 +20,7 @@ This documentation outlines steps to manage Azure Active Directory (Azure AD, no
 <img width="1694" height="547" alt="Create new user" src="https://github.com/user-attachments/assets/f9e27339-4a51-46b2-8516-417c9ad0f7de" />
 
 4.	Add a User principal name as **John** and a Display name as **John** .
-5.	The Username and Display name are required.  The domain part of the username must use either the initial default domain name, __<yourdomainname>.onmicrosoft.com__, or a custom domain name.
+5.	The Username and Display name are required.  The domain part of the username must use either the initial default domain name, ``<yourdomainname>.onmicrosoft.com``, or a custom domain name.
 6.	Copy the auto-generated password that was provided in the box. (You will need to provide this password to the user for their initial login). 
 7.	Click **Review + create**.
 <img width="1694" height="547" alt="Create new user" src="https://github.com/user-attachments/assets/6aa05220-ede1-4638-b838-427ef432fed4" />
@@ -106,7 +106,7 @@ Multi-Factor Authentication adds an additional layer of security by requiring us
 11. Once completed, you can view the user state on the multi-factor authentication page. You can see the user has been enabled with multifactor authentication
 <img width="2038" height="684" alt="Enforce MFA" src="https://github.com/user-attachments/assets/cc870140-7e64-4eb6-a361-19c895ecccc4" />
 
-## Notes & Tips: ##
+## Notes & Tips:
 
   - **Security:** Require at least two authentication methods for password reset to prevent unauthorized resets
     learn.microsoft.com

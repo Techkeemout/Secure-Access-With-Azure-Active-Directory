@@ -66,13 +66,13 @@ In this task we enable SSPR for the DevSupport group created above.
 4.	Click the select group link under Select Group to populate your list of available groups.
 5.	Choose DevSupport and click Select.
 6.	Click Save to enable self-service password reset (SSPR).
+<img width="2311" height="1270" alt="ENABLE Group MFA" src="https://github.com/user-attachments/assets/6bc9e037-bf61-4312-8a52-fb50b7524c0f" />
 
 
 ## Task 4: Test self-service password reset  ##
 After enabling SSPR for a group (e.g., DevSupport), it’s important to test the functionality from an end-user perspective. This ensures users can reset their own passwords and that the feature is properly scoped and working.
 1. To test the manual registration process from an end-user's perspective, open a new browser window in InPrivate or incognito mode, and browse to [https://aka.ms/ssprsetup](url)
 2. Sign in with the username of a test user, like Jeff. 
-<img width="1669" height="938" alt="Sign In Jeff" src="https://github.com/user-attachments/assets/31c2d342-9e29-4638-ad5d-bc114e3daa17" />
 
 3. On the next page, you will be prompted to enter your credentials, click **Forgot password**. 
 <img width="1674" height="850" alt="Jeff Forgot Password" src="https://github.com/user-attachments/assets/5b1af1c7-b3d5-45e6-ad0e-104dc8f3dbed" />

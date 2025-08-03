@@ -11,22 +11,26 @@ This documentation outlines steps to manage Azure Active Directory (Azure AD, no
 
 ## Task 1: Add a new user in Azure AD ##
 1. Sign in to the [Azure portal](https://portal.azure.com/) with your login credentials. Navigate to **Microsoft Entra ID**. Select **Roles and administrators** under the Manage blade.
-<img width="1680" height="801" alt="image" src="https://github.com/user-attachments/assets/6157fe47-63f7-44c8-a7da-86558ea06ecd" />
-
+<img width="1675" height="727" alt="Roles and administrators" src="https://github.com/user-attachments/assets/9340a8c4-a969-42db-beac-6044de466890" />
 
 2.	To create a user, check your role. If your role is listed as **Global Administrator**, you can manage all aspects of Azure AD.
-<img width="1665" height="859" alt="image" src="https://github.com/user-attachments/assets/5d772e12-c00c-4f68-940c-59d33bbec3c4" />
-
+<img width="1679" height="795" alt="GlobalAdministrator" src="https://github.com/user-attachments/assets/f5fef0d5-f271-4fc2-8467-67285a76d506" />
 
 3.	Navigate back to **Microsoft Entra ID**, under the **Manage** blade, select **Users**. Select **Create new user** from the **New user** menu to add a new user.
+<img width="1694" height="547" alt="Create new user" src="https://github.com/user-attachments/assets/f9e27339-4a51-46b2-8516-417c9ad0f7de" />
+
 4.	Add a User principal name as **John** and a Display name as **John** .
 5.	The Username and Display name are required.  The domain part of the username must use either the initial default domain name, __<yourdomainname>.onmicrosoft.com__, or a custom domain name.
 6.	Copy the auto-generated password that was provided in the box. (You will need to provide this password to the user for their initial login). 
 7.	Click **Review + create**.
+<img width="1694" height="547" alt="Create new user" src="https://github.com/user-attachments/assets/6aa05220-ede1-4638-b838-427ef432fed4" />
+
 8.	Verify the information and then select Create to create a new user.  
+<img width="1694" height="547" alt="Create new user" src="https://github.com/user-attachments/assets/3358d2e1-33a4-4151-83d5-8cf5e8963e5f" />
+
 9.	The user is created and added to your Azure AD organization.
 10.	Repeat the steps for the other two users, Dave and Jeff.
-<img width="1728" height="844" alt="image" src="https://github.com/user-attachments/assets/25c4470c-3cc3-4f00-abaa-f9f044b19dbc" />
+<img width="1628" height="632" alt="Create all users" src="https://github.com/user-attachments/assets/397087d2-fc39-4379-8d08-0a51d5b508d7" />
 
 
 
@@ -34,11 +38,12 @@ This documentation outlines steps to manage Azure Active Directory (Azure AD, no
 ## Task 2: Create a group called DevSupport and add memeber ##
 Creating a security group in Azure AD lets you assign access or permissions collectively. In this task, we create a group named DevSupport and add users who provide developer support.
 1. Navigate back to **Microsoft Entra ID**, under the **Manage** blade, select **Groups**.
+<img width="1612" height="788" alt="Manage Groups" src="https://github.com/user-attachments/assets/3b316526-b361-4515-8b0a-dc40898826b3" />
+
 2. Select **New group**.
 3. Select the desired **Microsoft 365** from the drop-down menu. This will enable the shared email address for the group.
 4. Provide the Group information.
 5. To add members, click on the link under **Members** selected. Choose the desired names from the list and click **Select**.
-<img width="997" height="570" alt="image" src="https://github.com/user-attachments/assets/d810f8ee-85aa-4c5e-a44d-4daec5db8cf3" />
 6.	Verify the information and select Create to create the group. 
 7.	Your Group is successfully created. Click on the name of the group to see total of members.
 
@@ -61,9 +66,7 @@ In this task we enable SSPR for the DevSupport group created above.
 After enabling SSPR for a group (e.g., DevSupport), it’s important to test the functionality from an end-user perspective. This ensures users can reset their own passwords and that the feature is properly scoped and working.
 1. To test the manual registration process from an end-user's perspective, open a new browser window in InPrivate or incognito mode, and browse to [https://aka.ms/ssprsetup](url)
 2. Enter the credentials for the user.
-3. Follow the verification steps to reset your password. 
-4.
-5.
+3. Follow the verification steps to reset your password.
 
 ## Task 5: Task 5: Enable and configure multifactor authentication for a user ##
 Multi-Factor Authentication adds an additional layer of security by requiring users to verify their identity using a second method beyond just a password.
@@ -82,7 +85,6 @@ Multi-Factor Authentication adds an additional layer of security by requiring us
 7. If you enable remember multi-factor authentication on trusted device, users can mark a device as trusted when they sign in by selecting Don't ask again.
 
 ## Notes & Tips: ##
-
 
   - **Security:** Require at least two authentication methods for password reset to prevent unauthorized resets
     learn.microsoft.com

@@ -23,7 +23,7 @@ This documentation outlines steps to manage Azure Active Directory (Azure AD, no
 5.	The Username and Display name are required.  The domain part of the username must use either the initial default domain name, ``<yourdomainname>.onmicrosoft.com``, or a custom domain name.
 6.	Copy the auto-generated password that was provided in the box. (You will need to provide this password to the user for their initial login). 
 7.	Click **Review + create**.
-<img width="1694" height="547" alt="Create new user" src="https://github.com/user-attachments/assets/6aa05220-ede1-4638-b838-427ef432fed4" />
+<img width="2030" height="1274" alt="Create John User" src="https://github.com/user-attachments/assets/6c51ddbc-c678-41d0-8e57-682b30c096a3" />
 
 8.	Verify the information and then select Create to create a new user.  
 <img width="1694" height="547" alt="Create new user" src="https://github.com/user-attachments/assets/3358d2e1-33a4-4151-83d5-8cf5e8963e5f" />

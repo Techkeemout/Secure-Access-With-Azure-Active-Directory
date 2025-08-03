@@ -41,9 +41,15 @@ Creating a security group in Azure AD lets you assign access or permissions coll
 <img width="1612" height="788" alt="Manage Groups" src="https://github.com/user-attachments/assets/3b316526-b361-4515-8b0a-dc40898826b3" />
 
 2. Select **New group**.
-3. Select the desired **Microsoft 365** from the drop-down menu. This will enable the shared email address for the group.
+<img width="1608" height="858" alt="Create new group" src="https://github.com/user-attachments/assets/c9607b3d-3aac-4e5a-b458-6af5cc48db46" />
+
+3. Select the desired group type, in this case **Microsoft 365** from the drop-down menu. This will enable the shared email address for the group.
 4. Provide the Group information.
+<img width="1593" height="922" alt="Add Group Information" src="https://github.com/user-attachments/assets/c126d5ed-c939-4d54-ae31-a36ef298e416" />
+
 5. To add members, click on the link under **Members** selected. Choose the desired names from the list and click **Select**.
+<img width="1681" height="924" alt="Add Group Members" src="https://github.com/user-attachments/assets/9e487cae-96dc-4227-9be9-cee38e538aa9" />
+
 6.	Verify the information and select Create to create the group. 
 7.	Your Group is successfully created. Click on the name of the group to see total of members.
 
@@ -53,7 +59,7 @@ Self-service password reset (SSPR) allows users to reset their Azure AD password
 In this task we enable SSPR for the DevSupport group created above.
 1. Navigate to Microsoft Entra ID, select **Password reset**.
 <img width="1682" height="903" alt="image" src="https://github.com/user-attachments/assets/70b698a7-c388-4f07-8665-5ad8f8f870f1" />
-2. From the Properties page, under the option Self service password reset enabled, choose **Selected**.
+2. From the Properties page, under the option Self service password reset enabled, choose **Selected**
 <img width="1106" height="695" alt="image" src="https://github.com/user-attachments/assets/6043311a-979e-4622-bffc-296904234b8b" />
 
 3.	Choose Selected Group from the options shown to restrict password resets to a limited group of users.
@@ -65,24 +71,40 @@ In this task we enable SSPR for the DevSupport group created above.
 ## Task 4: Test self-service password reset  ##
 After enabling SSPR for a group (e.g., DevSupport), it’s important to test the functionality from an end-user perspective. This ensures users can reset their own passwords and that the feature is properly scoped and working.
 1. To test the manual registration process from an end-user's perspective, open a new browser window in InPrivate or incognito mode, and browse to [https://aka.ms/ssprsetup](url)
-2. Enter the credentials for the user.
-3. Follow the verification steps to reset your password.
+2. Sign in with the username of a test user, like Jeff. 
+<img width="1669" height="938" alt="Sign In Jeff" src="https://github.com/user-attachments/assets/31c2d342-9e29-4638-ad5d-bc114e3daa17" />
+
+3. On the next page, you will be prompted to enter your credentials, click **Forgot password**. 
+<img width="1674" height="850" alt="Jeff Forgot Password" src="https://github.com/user-attachments/assets/5b1af1c7-b3d5-45e6-ad0e-104dc8f3dbed" />
+
+4.Enter the test user's account information, the characters from the CAPTCHA, and then select Next.
+<img width="1686" height="741" alt="CApcha" src="https://github.com/user-attachments/assets/13ce67ea-94ce-40f3-8431-622b17bd5b9b" />
+
+5. Follow the verification steps to reset your password.
 
 ## Task 5: Task 5: Enable and configure multifactor authentication for a user ##
 Multi-Factor Authentication adds an additional layer of security by requiring users to verify their identity using a second method beyond just a password.
 1. Navigate to **Microsoft Entra ID**
-2. Click on Security under the Manage blade
+2. Click on **Security** under the **Manage** blade
 <img width="1326" height="878" alt="image" src="https://github.com/user-attachments/assets/80fd92cb-1ff5-41b4-8198-d2c515ee3990" />
 
 3. Click on **Multifactor authentication**.
 <img width="1148" height="771" alt="image" src="https://github.com/user-attachments/assets/364ee696-38c9-4381-a5ca-02207a70126a" />
 
-4. Select Additional cloud-based multifactor authentication settings.
+4. Select **Additional cloud-based multifactor authentication settings**.
 <img width="1150" height="630" alt="image" src="https://github.com/user-attachments/assets/4068fb23-e559-4653-a5e0-d548c54dd2c0" />
-5. Under Serviec settings, scroll down to Verication options
+5. Under Service settings, scroll down to Verication options
 6. Check the box Allow users to remember mutilfation authentication on devices they trust (between one to 365 days) and click **Save.**
 <img width="1624" height="919" alt="image" src="https://github.com/user-attachments/assets/d18dd20b-b63c-4b69-927e-50ee61acbcb9" />
-7. If you enable remember multi-factor authentication on trusted device, users can mark a device as trusted when they sign in by selecting Don't ask again.
+
+7. If you enable "Remember multi-factor authentication on trusted device", users can mark a device as trusted when they sign in by selecting Don't ask again.
+8. Navigate back to **Microsoft Entra ID** > Select Users 
+<img width="2110" height="635" alt="users overview" src="https://github.com/user-attachments/assets/c09ea454-f865-4ca0-93f4-bac4a7e351af" />
+
+9.  Click on Per-user MFA
+10. Check the boxes for the desired users to enable
+11. Once completed, you can view the user state on the multi-factor authentication page. You can see the user has been enabled with multifactor authentication
+<img width="2038" height="684" alt="Enforce MFA" src="https://github.com/user-attachments/assets/cc870140-7e64-4eb6-a361-19c895ecccc4" />
 
 ## Notes & Tips: ##
 
